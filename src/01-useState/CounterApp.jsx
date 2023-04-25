@@ -22,7 +22,7 @@ export const CounterApp = () => {
                 // counter3
 
                 ...state,
-                counter1: counter1  + 1,
+                counter1: counter1  + 2,
 
                 }) } >+1</button>
         </>
