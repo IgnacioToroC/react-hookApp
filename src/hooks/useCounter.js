@@ -9,14 +9,12 @@ export const useCounter = ( initialCounter = 11) => {
 
     const decrement= ( value ) => {
         const valor = counter - value;
-        
+
         if( valor < 0 ){
             setCounter( 0 );
         }else{
             setCounter( valor );
         };
-
-        
     };
 
     const reset = () => {
