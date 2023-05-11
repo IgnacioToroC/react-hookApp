@@ -13,7 +13,7 @@ const heavyStuff = ( iteratinoNumber = 100) =>{
 
 export const MemoHook  = () => {
 
-    const { counter, increment } = useCounter(5000);
+    const { counter, increment } = useCounter(50);
 
     const [ show, setShow] = useState(true);
 
