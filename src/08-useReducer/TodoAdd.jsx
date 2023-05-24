@@ -4,23 +4,20 @@ export const TodoAdd = ({ onNewTodo }) => {
 
     const { description, onInputchange, onResetForm  } = useForm({
         description:''
-    })     
-
+    }) 
 
     const onFormSubmit = ( event ) =>{
         event.preventDefault();
         if( description.length <= 1 ) return;
 
         const newTodo = {
-            id: new Date(),
+            id: new Date().getTime(),
             done:false,
-            description: description
+            description
         }
-     
         onNewTodo( newTodo );
-        onResetForm()
+        onResetForm();
     }
-
         
     return (
         <>
@@ -41,7 +38,6 @@ export const TodoAdd = ({ onNewTodo }) => {
                     Agregar
                 </button>
             </form>
-
         </>
     )
 }
