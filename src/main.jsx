@@ -19,19 +19,19 @@ import { TodoApp } from './08-useReducer/TodoApp';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-  //   {/* <HooksApp /> */}
-  //   <CounterApp  />  
-  //   <CounterWithCustomHook /> 
-  //   <SimpleForm />
-  //   <FormWithCustomHook />
-  //   <MultipleCustomHooks /> 
-  //   <FocusScreen></FocusScreen>
-  //   <Layout></Layout>
-  //   <Memorize></Memorize>
-  //   <MemoHook/>
-  //   <CallbackHook></CallbackHook>
-  //   <Padre></Padre>
+   <React.StrictMode>
+     {/* <HooksApp /> */}
+     <CounterApp  />  
+     <CounterWithCustomHook /> 
+     <SimpleForm />
+     <FormWithCustomHook />
+     <MultipleCustomHooks /> 
+     <FocusScreen></FocusScreen>
+     <Layout></Layout>
+     <Memorize></Memorize>
+     <MemoHook/>
+     <CallbackHook></CallbackHook>
+     <Padre></Padre>
     <TodoApp/>
-  //</React.StrictMode>,
+  </React.StrictMode>,
 )
