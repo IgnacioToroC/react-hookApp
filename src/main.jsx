@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import { BrowserRouter } from 'react-router-dom';
+
 import './index.css';
 //import { HooksApp } from './HooksApp';
 import { CounterApp } from './01-useState/CounterApp';
@@ -16,22 +19,27 @@ import { Padre } from './07-tarea-memo/Padre';
 
 import './08-useReducer/into-reducer'
 import { TodoApp } from './08-useReducer/TodoApp';
-
+import { MainApp } from './09-useContext/MainApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-   <React.StrictMode>
-     {/* <HooksApp /> */}
-     <CounterApp  />  
-     <CounterWithCustomHook /> 
-     <SimpleForm />
-     <FormWithCustomHook />
-     <MultipleCustomHooks /> 
-     <FocusScreen></FocusScreen>
-     <Layout></Layout>
-     <Memorize></Memorize>
-     <MemoHook/>
-     <CallbackHook></CallbackHook>
-     <Padre></Padre>
-    <TodoApp/>
-  </React.StrictMode>,
-)
+  <BrowserRouter>
+    
+      <MainApp />
+    
+  </BrowserRouter>
+//    <React.StrictMode>
+//      {/* <HooksApp /> */}      
+//      <CounterApp  />  
+//      <CounterWithCustomHook /> 
+//      <SimpleForm />
+//      <FormWithCustomHook />
+//      <MultipleCustomHooks /> 
+//      <FocusScreen></FocusScreen>
+//      <Layout></Layout>
+//      <Memorize></Memorize>
+//      <MemoHook/>
+//      <CallbackHook></CallbackHook>
+//      <Padre></Padre>
+//     <TodoApp/>
+//   </React.StrictMode>,
+// )
