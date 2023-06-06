@@ -7,7 +7,7 @@ export const TodoApp = () => {
 
     const {todos, todosCount, pendingTodosCount , handleNewTodo, handleDeleteTodo, onToggleTodo } = useTodos();
 
-  return (
+    return (
     <>
         <br />
         <br />
@@ -30,10 +30,7 @@ export const TodoApp = () => {
             </div>
         </div>
 
-
-
         <hr />
-
     </>
   )
 }
